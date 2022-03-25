@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/* SpryMenuBarHorizontal.css - version 0.6 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/*******************************************************************************
+
+ LAYOUT INFORMATION: describes box model, positioning, z-order
+
+ *******************************************************************************/
+
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding
+El recipiente exterior de la barra de menú, un cuadro de ancho automático, sin margen o relleno */
+ul.MenuBarHorizontal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+	color:#666;
+	font-family: "Trajan Pro";
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html
+Ajuste la barra de menú activo con esta clase, en la actualidad entorno z-index para dar cabida a IE prestación de errores: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html*/
+ul.MenuBarActive
+{
+	z-index: 1000;
+	background-image: url(../img/back.jpg);
+}
+/* Menu item containers, position children relative to this container and are a fixed width 
+contenedores Elemento de menú, los niños posición en relación con este contenedor y un ancho fijo*/
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 162px;
+	float: left;
+	background-image: url(../img/back.jpg);
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em)
+Submenús que aparecen por debajo de sus padres (parte superior: 0) con un mayor z-index, pero son inicialmente fuera de la parte izquierda de la pantalla (-1000em)*/
+ul.MenuBarHorizontal ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1020;
+	cursor: default;
+	width: 195.2px;
+	position: absolute;
+	left: -1000em;
+	color: #666;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item
+Submenú que se muestra con designación de clase MenuBarSubmenuVisible, nos pusimos a la izquierda en auto para lo que se refiere a la pantalla por debajo de su elemento de menú primario*/
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;
+	background-color:d5d5d4;
+	color: #666;
+	font-family: "Trajan Pro";
+	font-size: 12px;
+}
+/* Menu item containers are same fixed width as parent 
+Elemento de menú son los contenedores mismo ancho fijo como padre*/
+ul.MenuBarHorizontal ul li
+{
+	width: 195.2px;
+	background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-color: #F8BA27;
+	border-right-color: #F8BA27;
+	border-bottom-color: #F8BA27;
+	border-left-color: #F8BA27;
+	color: #666;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) 
+Submenús deben aparecer superpuestas ligeramente a la derecha (95%) y hasta (-5%)*/
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen
+Submenú que se muestra con designación de clase MenuBarSubmenuVisible, nos pusimos a la izquierda a 0 por lo que viene en la pantalla*/
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+	
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #666;
+	text-decoration: underline;
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+ *******************************************************************************/
+
+/* Submenu containers have borders on all sides
+Submenú contenedores tienen fronteras en todos los lados*/
+ul.MenuBarHorizontal ul
+{
+	border: 1px none #CCCCCC;
+}
+/* Menu items are a light gray block with padding and no text decoration 
+Los elementos de menú son un bloque de color gris claro con el relleno y ningún tipo de decoración de texto*/
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	padding: 0.5em;
+	color: #666;
+	text-decoration:none;
+	font-family:"Trajan Pro";
+	font-size: 10px;
+	font-weight: bold;
+}
+/*background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;*/
+/* Menu items that have mouse over or focus have a blue background and white text
+Los elementos de menú que tienen el mouse encima o enfoque tiene un fondo azul y texto blanco*/
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus, 
+{
+	
+	text-decoration:underline;
+	
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text 
+Los elementos de menú que tienen el mouse encima o enfoque tiene un fondo azul y texto blanco*/
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	color: #666;
+	background-color:#fafafa;	
+	text-decoration:underline;
+
+}
+
+/*******************************************************************************
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+ INDICACIÓN SUBMENÚ: estilos si hay un submenú en virtud de un determinado elemento de menú
+
+ *******************************************************************************/
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) 
+Los elementos de menú que tiene un submenú que la clase designación MenuBarItemSubmenu y están configurados para utilizar una imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal2 a.MenuBarItemSubmenu2
+{
+	background:fafafa;
+	background-position: 95% 50%;
+	letter-spacing: 1px;
+}
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) 
+Los elementos de menú que tiene un submenú que la clase designación MenuBarItemSubmenu y están configurados para utilizar una imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal2 ul a.MenuBarItemSubmenu2
+{
+	background-image: url(SpryMenuBarRight.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-color:fafafa;
+	background-attachment: 195.2;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%)
+Los elementos de menú que se abre con submenús tienen la MenuBarItemSubmenuHover designación de clase y están configurados para utilizar un "flotar" la imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal2 a.MenuBarItemSubmenuHover2
+{
+	background-image: url(SpryMenuBarDownHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%)
+Los elementos de menú que se abre con submenús tienen la MenuBarItemSubmenuHover designación de clase y están configurados para utilizar un "flotar" la imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal2 ul a.MenuBarItemSubmenuHover2
+{
+	background-image: url(SpryMenuBarRightHover.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	width: 195.2px;
+	
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+ NAVEGADOR HACKS: los hacks a continuación no debe ser cambiada a menos que usted sea un experto
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe
+HACK PARA IE: para asegurarse de que los menús de la sub muestran por encima de los controles de formulario, que subyace cada submenú con un iframe*/
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+
+
+	filter:alpha(opacity:0.1);
+	background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+ul.MenuBarHorizontal ul
+{
+	border: 1px none #CCCCCC;
+}
+/* Menu items are a light gray block with padding and no text decoration 
+Los elementos de menú son un bloque de color gris claro con el relleno y ningún tipo de decoración de texto*/
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	padding: 0.5em;
+	color: #666;
+	text-decoration:none;
+	font-family:"Trajan Pro";
+	font-size: 10px;
+	font-weight: bold;
+}
+/*background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;*/
+/* Menu items that have mouse over or focus have a blue background and white text
+Los elementos de menú que tienen el mouse encima o enfoque tiene un fondo azul y texto blanco*/
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus, 
+{
+	
+	text-decoration:underline;
+	
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text 
+Los elementos de menú que tienen el mouse encima o enfoque tiene un fondo azul y texto blanco*/
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	color: #666;
+	background-color:#fafafa;	
+	text-decoration:underline;
+
+}
+
+/*******************************************************************************
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+ INDICACIÓN SUBMENÚ: estilos si hay un submenú en virtud de un determinado elemento de menú
+
+ *******************************************************************************/
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) 
+Los elementos de menú que tiene un submenú que la clase designación MenuBarItemSubmenu y están configurados para utilizar una imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+	background:fafafa;
+	background-position: 95% 50%;
+	letter-spacing: 1px;
+}
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) 
+Los elementos de menú que tiene un submenú que la clase designación MenuBarItemSubmenu y están configurados para utilizar una imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+	background-image: url(SpryMenuBarRight.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-color:fafafa;
+	background-attachment: 195.2;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%)
+Los elementos de menú que se abre con submenús tienen la MenuBarItemSubmenuHover designación de clase y están configurados para utilizar un "flotar" la imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarDownHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%)
+Los elementos de menú que se abre con submenús tienen la MenuBarItemSubmenuHover designación de clase y están configurados para utilizar un "flotar" la imagen de fondo situado en el extremo izquierdo (95%) y centrada verticalmente (50%)*/
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarRightHover.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	width: 195.2px;
+	
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+ NAVEGADOR HACKS: los hacks a continuación no debe ser cambiada a menos que usted sea un experto
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe
+HACK PARA IE: para asegurarse de que los menús de la sub muestran por encima de los controles de formulario, que subyace cada submenú con un iframe*/
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+
+
+	filter:alpha(opacity:0.1);
+	background-image: url(../img/back.jpg);
+	background-repeat: repeat-x;
+}
+
+
+
+
+
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing 
+HACK PARA IE: para estabilizar la apariencia de los elementos del menú, la barra de flotación es mantener el IE 5.0 de análisis*/
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+	display: inline;
+	float: left;
+	
+	}
+}

@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:hover {
+    color:#FF0000;
+	text-decoration:none;
+
+}
+.header {
+	background-image: url(../img/banner.png);
+}
+.footer {
+	background-image: url(../img/pie.png);
+}
+.vinculo_error {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	text-decoration: blink;
+	color: #F00;
+}
+.letra_login {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+}
+.letra_solicitud {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #00F;
+	font-weight: bold;
+	line-height: normal;
+}
+.titulos_tablas {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	text-decoration:none;
+}
+.letra_tablas {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #000;
+	font-weight: normal;
+	text-align: justify;
+}
+.letra_folio {
+    font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+}
+
+.msj_login {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #00F;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.letra_error {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	color: #999;
+	font-weight: normal;
+}
+.boton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #F00;
+	
+}
+.titulos2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	
+}
+	
+.titulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #C60;
+	text-decoration: none;	
+}
+.celda {
+	height: auto;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	white-space: nowrap;
+	display: table-cell;
+}
+.color_fondo {
+	background-color: #FFE1D2;
+	text-align: center;
+	}
+.color_fondo2 {
+	background-color: #B5B5B5;
+	text-align: center;
+	}
+	.color_fondo3 {
+	background-color: #FFE1D2;
+	text-align: left;
+	}		
+.color_fondo4 {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #CFE1F3;
+	text-align: center;
+	}
+.color_fondo_azul_left {
+    font-family: Verdana, Geneva, sans-serif;
+	background-color: #CFE1F3;
+	text-align: left;
+	}
+.menu_salir {
+	color: #3F4665;
+	font-family: "Trajan Pro";
+	font-size: 12px;
+	text-decoration: none;                      
+}
+.usuario{
+	color: #3F4665;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+ .usuarioBold {
+	color: #3F4665;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+    font-weight: bold;
+	text-decoration:none;
+ }
+ .usuarioBlanco {
+	color: #FFFFFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+    font-weight: bold;
+ } 
+ .usuario_dinamica {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+}
+.titulos_menu {
+	color: white; 
+	font-size: 17px;
+	text-shadow: 
+	black 0.1em 0.1em 0.2em;
+	}

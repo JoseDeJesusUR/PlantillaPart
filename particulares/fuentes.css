@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:hover 
+{
+	color:#666;
+	text-decoration:none;
+	
+	}
+
+.links {
+	font-family: "Trajan Pro";
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+}
+.links_last {
+border-bottom: 2px solid #ff0000;
+}
+.colapsible {
+	font-family: "Trajan Pro";
+	font-size: 14px;
+	font-weight: bold;
+	color: #303030;
+	text-decoration: none;
+}
+.titlebig {
+	font-family: "Trajan Pro";
+	font-size: 24px;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 0px;
+}
+.textmed {
+	font-family: "Trajan Pro";
+	font-size: 18px;
+	color: 2b2b2b;
+	text-decoration: none;
+	font-weight: normal;
+}
+.textmed2 {
+	font-family: "Trajan Pro";
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.cuentavisitas {
+	font-family: "Trajan Pro";
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+	word-spacing: 0em;
+	float: none;
+	clear: both;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	}
+.textbody {
+	font-family: "Trajan Pro";
+	font-size: 13px;
+	color: 808080;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: justify;
+	word-spacing: 0em;
+	float: left;
+}
+
+.titulos_naranja {
+	font-family: "Trajan Pro";
+	font-size: 15px;
+	color: #666;
+	text-align: left;
+	font-weight: bolder;
+	letter-spacing: -1pt;
+}
+.bajo_naranja {
+	background-position: left;
+	font-family: "Trajan Pro";
+	font-size: 12px;
+	color: #999;
+	font-style: normal;
+	line-height: 2em;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	list-style-position: inside;
+	list-style-type: circle;
+	text-align: left;
+	margin-left: 5px;
+		
+}
+
+.bajo_naranja2 {
+	
+	background-position: center;
+	font-family: "Trajan Pro";
+	font-size: 12px;
+	color: #999;
+	list-style-type: none;
+	text-decoration: none;
+	list-style-image: none;
+	list-style-position: inside;
+	line-height: normal;
+	onmouseovercolor: #cccccc;
+	clear: none;
+	float: none;
+	text-align: left;
+	padding: 10px;
+	clip: rect(auto,auto,auto,auto);
+	margin: 10px;
+	letter-spacing: 0.5pt;
+}
+
+.linksang {
+	font-family: "Trajan Pro";
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+	/* TEXTO CON SANGRIA */
+	padding-left: 40px;
+}
+.linksang2 {
+	font-family: "Trajan Pro";
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+	/* TEXTO CON DOBLE SANGRIA */
+	padding-left: 70px;
+}
+.subtitles_gray {
+	font-family: "Trajan Pro";
+	font-size: 20px;
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.subtitlesbig_gray {
+	font-family: "Trajan Pro";
+	font-size: 40px;
+	color: #d8d5d5;
+	text-decoration: none;
+	font-weight: bold;
+}
+.tituloAviso {
+	font-family: "Trajan Pro";
+	font-size: 24px;
+	font-weight: bold;
+	color: #9A1801;
+}
+
+.tituloAvisoVerde {
+	font-family: "Trajan Pro";
+	font-size: 24px;
+	font-weight: bold;
+	color: #78D9F5;
+}
+
+
+
+.azultexto {
+	font-family: "Trajan Pro";
+	font-size: 24px;
+	font-weight: bold;
+	color: #2A1FFF;
+}
+
+.textoAviso {
+	font-family: "Trajan Pro";
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+}
+.i_cabeza {
+	font-family: "Trajan Pro";
+	font-size: 16px;
+	color: #FFF;
+	background-color: #F90;
+	text-align: center;
+	width: 200px;
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-top-left-radius:10px;
+	-moz-border-top-left-right:10px;
+	text-decoration: none;
+}
+.i_box {
+	font-family: "Trajan Pro";
+	font-size: 16px;
+	color: #666;
+	background-color: #FBDCB3;
+	text-align: center;
+	width: 200px;
+	padding: 15 px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-bottom-left-radius:10px;
+	-moz-border-bottom-left-right:10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.i_number{
+	font-family: "Trajan Pro";
+	font-size: 24px;
+	color: #FFF;
+	background-color: #66F;
+	text-align: right;
+	width: 30px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-bottom-left-radius:10px;
+	-moz-border-bottom-left-right:10px;
+	font-weight: bold;
+	padding: 15;
+}
+	

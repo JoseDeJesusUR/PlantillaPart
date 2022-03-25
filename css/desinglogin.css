@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	height: auto;
+	width: 976px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#container_stc {
+	height: auto;
+	width: 976px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#container_stc #header_stc {
+	height: 80px;
+	width: 976px;
+}
+#container_stc #footer_stc {
+	height: 150px;
+	width: 976px;
+}
+#container_stc #body_stc {
+	height: auto;
+	width: 976px;
+	background-color: #FFF;
+	clip: rect(auto,auto,auto,auto);
+}
+
+#container #header {
+	height: 80px;
+	width: 976px;
+}
+#container #footer {
+	height: 150px;
+	width: 976px;
+}
+#container #body {
+	height: 375px;
+	width: 976px;
+}
+#container_stc #menu_stc {
+	background-color: #666;
+	height: auto;
+	width: 976px;
+}
+#bgVentanaModal {
+	background-image: url(../img/1.png);
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+#ventanaModal {
+    
+    /*border: 10px double #FFF;*/
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -410px;
+}

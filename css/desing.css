@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	height: auto;
+	width: 976px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#container_stc #login {
+	background-color: #ECF7FD;
+	height: 35px;
+	width: 976px;
+}
+#container_stc #login2 {
+	background-color: #C9C9C9;
+	height: 35px;
+	width: 976px;
+}
+
+
+
+
+#container_stc {
+	height: auto;
+	width: 976px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#container_stc #header_stc {
+	height: 80px;
+	width: 976px;
+}
+#container_stc #footer_stc {
+	height: 150px;
+	width: 976px;
+}
+#container_stc #body_stc {
+	height: auto;
+	width: 976px;
+	background-color: #FFF;
+	clip: rect(auto,auto,auto,auto);
+	text-align: left;
+}
+
+#container #header {
+	height: 80px;
+	width: 976px;
+}
+#container #footer {
+	height: 124px;
+	width: 976px;
+}
+#container #body {
+	height: 500px;
+	width: 976px;
+}
+#container_stc #menu_stc {
+	background-color: #;
+	height: auto;
+	width: 976px;
+}
